@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+labels = ['Python', 'Java', 'C++', 'JavaScript']
+values = [40, 25, 20, 15]
+
+plt.bar(labels, values, color='skyblue')
+plt.title("Programming Language Popularity")
+plt.xlabel("Languages")
+plt.ylabel("Usage (%)")
+plt.show()
