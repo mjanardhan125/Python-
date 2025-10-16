@@ -1,0 +1,22 @@
+tasks = []
+
+def show_tasks():
+    print("\nYour Tasks:")
+    for i, task in enumerate(tasks, 1):
+        print(f"{i}. {task}")
+
+while True:
+    action = input("\nAdd / Remove / Show / Exit: ").lower()
+    if action == "add":
+        task = input("Enter task: ")
+        tasks.append(task)
+    elif action == "remove":
+        show_tasks()
+        num = int(input("Enter task number to remove: "))
+        tasks.pop(num - 1)
+    elif action == "show":
+        show_tasks()
+    elif action == "exit":
+        break
+    else:
+        print("Invalid action")
