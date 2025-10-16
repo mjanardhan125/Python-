@@ -1,0 +1,16 @@
+questions = {
+    "What is the capital of France?": "paris",
+    "What is 5 + 7?": "12",
+    "Which language is used for web apps?": "javascript"
+}
+
+score = 0
+for q, a in questions.items():
+    user_ans = input(q + " ").lower()
+    if user_ans == a:
+        print("Correct!")
+        score += 1
+    else:
+        print("Wrong!")
+
+print(f"\nYour score: {score}/{len(questions)}")
